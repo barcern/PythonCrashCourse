@@ -1,0 +1,18 @@
+Python Crash Course Notes
+
+Naming convention:
+- variables: lowercase, must begin with underscore or letter, labels assigned to values
+
+Variable types:
+- string: series of characters inside quotation marks ("" or '' where choice based on whether ' or " used within string)
+    - f-string: use f"{}" to insert variable into string, can type in strings and use methods, previously format() method
+
+Methods:
+- actions python performs on a piece of data
+- variable.method()
+- title(), lower(), upper() to change case
+- rstrip(), lstrip(), strip() to remove whitespace around string
+
+Formatting:
+- \t for tab
+- \n for new line
