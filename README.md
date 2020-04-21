@@ -11,4 +11,4 @@ Chapter 7: User input and while loops \
 Chapter 8: Functions \
 Chapter 9: Classes \
 Chapter 10: Files and exceptions \
-Chapter 11: Testing your code \
+Chapter 11: Testing your code 
