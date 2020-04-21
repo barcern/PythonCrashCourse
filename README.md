@@ -1,8 +1,8 @@
-# This repository contains my code written as part of going through the Python Crash Course book. Details about the book:
+This repository contains my code written as part of going through the Python Crash Course book. Details about the book:
 # Eric Matthes - Python Crash Course (2nd Edition)
 
-# Part I:
-Chapter 1: Getting started
+### Part I:
+Chapter 1: Getting started \n
 Chapter 2: Variables and simple data types
 Chapter 3: Introducing lists
 Chapter 4: Working with lists
