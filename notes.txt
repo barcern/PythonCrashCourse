@@ -2,10 +2,13 @@ Python Crash Course Notes
 
 Naming convention:
 - variables: lowercase, must begin with underscore or letter, labels assigned to values
+- constants: all caps
 
 Variable types:
 - string: series of characters inside quotation marks ("" or '' where choice based on whether ' or " used within string)
     - f-string: use f"{}" to insert variable into string, can type in strings and use methods, previously format() method
+- integer: use _ to improve readability
+- float: given in any operation involving a float or division, use _ to improve readability
 
 Methods:
 - actions python performs on a piece of data
@@ -16,3 +19,6 @@ Methods:
 Formatting:
 - \t for tab
 - \n for new line
+
+Multiple assignment:
+- e.g. x, y, z = 0, 0, 0
