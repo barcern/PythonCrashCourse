@@ -8,13 +8,22 @@ Variable types:
 - string: series of characters inside quotation marks ("" or '' where choice based on whether ' or " used within string)
     - f-string: use f"{}" to insert variable into string, can type in strings and use methods, previously format() method
 - integer: use _ to improve readability
-- float: given in any operation involving a float or division, use _ to improve readability
+- float: given in any operation involving a float or division, use _ to improve 
+
+Lists: 
+- collection of items in a particular order
+- example_list = [x, y]
+- index: starts at 0, -1 is last, example_list[0].title() to access item and change capitalisation
 
 Methods:
 - actions python performs on a piece of data
 - variable.method()
 - title(), lower(), upper() to change case
 - rstrip(), lstrip(), strip() to remove whitespace around string
+- append(value), insert(index, value), pop(index) to edit lists
+
+Keywords:
+- del obj_name to delete an object
 
 Formatting:
 - \t for tab
