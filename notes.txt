@@ -20,7 +20,7 @@ Methods:
 - variable.method()
 - title(), lower(), upper() to change case
 - rstrip(), lstrip(), strip() to remove whitespace around string
-- append(value), insert(index, value), pop(index) to edit lists
+- append(value), insert(index, value), pop(index), remove(value) to edit lists where remove(value) only removes first occurence
 
 Keywords:
 - del obj_name to delete an object

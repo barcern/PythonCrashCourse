@@ -36,6 +36,7 @@ print(bikes2)
 motorcycles.insert(0, 'vespa')
 print(motorcycles)
 
+# Remove by index - del and pop()
 del motorcycles[0]
 print(motorcycles)
 
@@ -48,6 +49,17 @@ first_owned = motorcycles.pop(0)
 print(motorcycles)
 print(first_owned)
 print(f"The first motorcycle I owned was a {first_owned.title()}.")
+
+# Remove by value - remove() only removes first occurence of value
+motorcycles = ['honda', 'yamaha', 'suzuki']
+motorcycles.remove('yamaha')
+print(motorcycles)
+
+motorcycles = ['honda', 'yamaha', 'suzuki', 'ducati']
+too_expensive = 'ducati'
+motorcycles.remove(too_expensive)
+print(motorcycles)
+print(f"\nA {too_expensive.title()} is too expensive for me.")
 
 
 
