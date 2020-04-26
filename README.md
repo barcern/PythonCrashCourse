@@ -12,3 +12,5 @@ Chapter 8: Functions \
 Chapter 9: Classes \
 Chapter 10: Files and exceptions \
 Chapter 11: Testing your code 
+
+Author's solutions for checking and code optimisation: https://ehmatthes.github.io/pcc_2e/solutions/solutions/

@@ -19,7 +19,7 @@ print(bicycles[-1])
 message = f"My first bicycle was a {bicycles[0].title()}."
 print(message)
 
-# Modifying elements in a list
+# Modifying elements in a list - append() and insert()
 motorcycles = ['honda', 'yamaha', 'suzuki']
 print(motorcycles)
 motorcycles[0] = 'ducati'
@@ -61,5 +61,32 @@ motorcycles.remove(too_expensive)
 print(motorcycles)
 print(f"\nA {too_expensive.title()} is too expensive for me.")
 
+# Organise permanently by sort()
+cars = ['bmw', 'audi', 'toyota', 'subaru']
+cars.sort()
+print(cars)
+cars = ['bmw', 'audi', 'toyota', 'subaru']
+cars.sort(reverse=True)
+print(cars)
 
+# Organise temporarily by sorted() function
+cars = ['bmw', 'audi', 'toyota', 'subaru']
+print("\nHere is the orginal list:")
+print(cars)
+print("Here is the sorted list:")
+print(sorted(cars))
+print("Here is the sorted list in reverse order:")
+print(sorted(cars, reverse=True))
+print("Here is the orginal list again:")
+print(cars)
 
+# Reverse order permanently by reverse()
+print("\nReverse list using .reverse() method")
+cars = ['bmw', 'audi', 'toyota', 'subaru']
+cars.reverse()
+print(cars)
+
+# Find length of list - len() function
+print("\nFind length of a list using len() function")
+length = len(cars)
+print(length)

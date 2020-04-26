@@ -18,12 +18,14 @@ Lists:
 Methods:
 - actions python performs on a piece of data
 - variable.method()
-- title(), lower(), upper() to change case
-- rstrip(), lstrip(), strip() to remove whitespace around string
-- append(value), insert(index, value), pop(index), remove(value) to edit lists where remove(value) only removes first occurence
+- .title(), .lower(), .upper() to change case
+- .rstrip(), .lstrip(), .strip() to remove whitespace around string
+- .append(value), .insert(index, value), .pop(index), .remove(value) to edit lists where remove(value) only removes first occurence
+- .sort(reverse=), .reverse() to permanently organise lists
 
-Keywords:
-- del obj_name to delete an object
+Functions:
+- del(obj_name) to delete an object
+- sorted(list, reverse=) to temporarily organise lists
 
 Formatting:
 - \t for tab
