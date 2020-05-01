@@ -33,3 +33,6 @@ Formatting:
 
 Multiple assignment:
 - e.g. x, y, z = 0, 0, 0
+
+Loops:
+- for loop:
