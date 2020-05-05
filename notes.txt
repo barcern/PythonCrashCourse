@@ -26,6 +26,11 @@ Methods:
 Functions:
 - del(obj_name) to delete an object
 - sorted(list, reverse=) to temporarily organise lists
+- range(first value, final value+1, step) in for loops, stops at final value so never prints it, range(6) gives 0-5
+- list() to create lists, e.g. list(range(5))
+- min(list) to give smallest value
+- max(list) to give largest value
+- sum(list) to give sum of all values
 
 Formatting:
 - \t for tab
@@ -36,6 +41,7 @@ Multiple assignment:
 
 Loops:
 - for loop: use : and indentation
+- list comprehension allows to create lists in one line, [expression for loop] e.g. squares = [value**2 for value in range(1,11)]
 
 Types of errors:
 - indentation
