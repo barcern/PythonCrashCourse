@@ -56,8 +56,45 @@ print(f"Digits sum: {sum_val}")
 squares = [value**2 for value in range(1,11)]
 print(f"List comprehension squares: {squares}")
 
+# Slicing
+players = ['charles', 'martina', 'michael', 'florence', 'eli']
+print(players[0:3])
+print(players[:4])
+print(players[2:])
+print(players[-3:])
+print(players[1:4:2])
 
+# Looping through a slice
+players = ['charles', 'martina', 'michael', 'florence', 'eli']
+print("Here are the first three players on my team:")
+for player in players[:3]:
+    print(player.title())
 
+# Copying a list
+my_foods = ['pizza', 'falafel', 'carrot cake']
+friend_foods = my_foods[:]
+print("My favourite foods are:")
+print(my_foods)
+print("\nMy friend's favourite foods are:")
+print(friend_foods)
+my_foods.append('cannoli')
+friend_foods.append('ice-cream')
+print("\nMy edited favourite foods are:")
+print(my_foods)
+print("\nMy friend's edited favourite foods are:")
+print(friend_foods)
+
+# Equating lists retains link between them so it doesn't work
+my_foods = ['pizza', 'falafel', 'carrot cake']
+friend_foods2 = my_foods
+print(f"\nFriend's foods: {friend_foods2}")
+print(f"My foods: {my_foods}")
+my_foods.append('cannoli')
+friend_foods2.append('ice-cream')
+print("My edited foods:")
+print(my_foods)
+print("My friend's edited foods:")
+print(friend_foods2)
 
 
 
