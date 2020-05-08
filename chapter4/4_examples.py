@@ -96,28 +96,23 @@ print(my_foods)
 print("My friend's edited foods:")
 print(friend_foods2)
 
+# Tuples
+dimensions = (200, 500)
+print(dimensions[0])
+print(dimensions[1])
+#dimensions[0]= 250 # Cannot re-assign value since tuples are immutable
 
+# For loops for tuples
+for dimension in dimensions:
+    print(dimension)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# Writing over a tuple
+dims = (200, 500)
+print("\nOriginal dimensions:")
+for dim in dims:
+    print(dim)
+dims = (400, 100)
+print("\nModified dimensions:")
+for dim in dims:
+    print(dim)
+    

@@ -16,6 +16,11 @@ Lists:
 - index: starts at 0, -1 is last, example_list[0].title() to access item and change capitalisation
 - slicing: use list[index1:index2:step] to get a portion of the list, use list[:] to copy full list (lists not separate if simply equated!)
 
+Tuples:
+- immutable lists
+- example_tuple = (x, y) and defined by commas so must always include a comma (even if one element only)
+- use standard index notation []
+
 Methods:
 - actions python performs on a piece of data
 - variable.method()
@@ -48,3 +53,4 @@ Types of errors:
 - indentation
 - logical
 - syntax
+- type e.g. when trying to change value in a tuple

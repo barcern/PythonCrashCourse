@@ -15,4 +15,5 @@ birds = ['goldcrest', 'blue tit', 'yellowhammer']
 for bird in birds:
     print(f"{bird.title()} is a type of bird which lives in the UK.")
     
-print("You can see these three birds in your garden if you are lucky and live in the UK!")
+print("You can see these three birds in your garden if you are lucky and live " 
+      "in the UK!")
