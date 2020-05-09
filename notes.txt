@@ -6,7 +6,7 @@ Naming convention:
 
 Variable types:
 - string: series of characters inside quotation marks ("" or '' where choice based on whether ' or " used within string)
-    - f-string: use f"{}" to insert variable into string, can type in strings and use methods, previously format() method
+	- f-string: use f"{}" to insert variable into string, can type in strings and use methods, previously format() method
 - integer: use _ to improve readability
 - float: given in any operation involving a float or division, use _ to improve 
 
@@ -42,12 +42,24 @@ Formatting:
 - \t for tab
 - \n for new line
 
+Conditional tests (Boolean expressions):
+- = for assigning
+- == for checking equality (equality operator)
+- != for checking inequality
+- <, <=, >, >= for mathematical comparisons
+- in for checking whether value in a list
+- not in for checking whether value not in a list
+
 Multiple assignment:
 - e.g. x, y, z = 0, 0, 0
 
 Loops:
 - for loop: use : and indentation
 - list comprehension allows to create lists in one line, [expression for loop] e.g. squares = [value**2 for value in range(1,11)]
+- if loop: use: and indentation
+	- uses conditional tests (True or False)
+	- case sensitive, use item.lower() == 'x' for testing
+	- and / or for checking for multiple conditions
 
 Types of errors:
 - indentation
