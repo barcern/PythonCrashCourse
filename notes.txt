@@ -60,7 +60,7 @@ Loops:
 	- uses conditional tests (True or False)
 	- case sensitive, use item.lower() == 'x' for testing
 	- and / or for checking for multiple conditions
-	- if, elif, else
+	- if, elif, else, run multiple if statements if each test needs to be evaluated / acted on
 
 Types of errors:
 - indentation
