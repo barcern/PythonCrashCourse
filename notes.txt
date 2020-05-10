@@ -61,6 +61,7 @@ Loops:
 	- case sensitive, use item.lower() == 'x' for testing
 	- and / or for checking for multiple conditions
 	- if, elif, else, run multiple if statements if each test needs to be evaluated / acted on
+	- if list: checks if list is empty
 
 Types of errors:
 - indentation
