@@ -21,6 +21,13 @@ Tuples:
 - example_tuple = (x, y) and defined by commas so must always include a comma (even if one element only)
 - use standard index notation []
 
+Dictionaries:
+- collections of key-value pairs where any object in python can be a value
+- example_dictionary = {'att1': 'value1', 'att2':, 'value2'}
+- to access a value: dictionary[key]
+- to add or modify a key-value pair: dictionary[key] = value
+- order of key-value pairs retained
+
 Methods:
 - actions python performs on a piece of data
 - variable.method()
@@ -28,9 +35,10 @@ Methods:
 - .rstrip(), .lstrip(), .strip() to remove whitespace around string
 - .append(value), .insert(index, value), .pop(index), .remove(value) to edit lists where remove(value) only removes first occurence
 - .sort(reverse=), .reverse() to permanently organise lists
+- .get(key, optional value) to get dictionary values if key may not exist
 
 Functions:
-- del(obj_name) to delete an object
+- del(obj_name) to delete an object (incl. dictionary key-value pairs, list items)
 - sorted(list, reverse=) to temporarily organise lists
 - range(first value, final value+1, step) in for loops, stops at final value so never prints it, range(6) gives 0-5
 - list() to create lists, e.g. list(range(5))
@@ -61,10 +69,11 @@ Loops:
 	- case sensitive, use item.lower() == 'x' for testing
 	- and / or for checking for multiple conditions
 	- if, elif, else, run multiple if statements if each test needs to be evaluated / acted on
-	- if list: checks if list is empty
+	- if list: checks if list is empty or if not list: checks if list is not empty
 
 Types of errors:
 - indentation
 - logical
 - syntax
 - type e.g. when trying to change value in a tuple
+- key
