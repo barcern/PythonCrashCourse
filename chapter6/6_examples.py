@@ -97,14 +97,62 @@ point_value = alien_0.get('points', 'No point value assigned.')
 print(point_value)
 
 
+# Looping through all key-value pairs
+print("\nLooping through all key-value pairs")
+user_0 = {
+    'username': 'efermi',
+    'first': 'enrico',
+    'last': 'fermi',
+    }
+print(user_0['username'])
+
+for key, value in user_0.items():
+    print(f"Key: {key}")
+    print(f"Value: {value}")
+
+favourite_languages = {
+    'jen': 'python',
+    'sarah': 'c',
+    'edward': 'ruby',
+    'phil': 'python',
+    }
+for name, language in favourite_languages.items():
+    print(f"{name.title()}'s favourite language is {language.title()}.")
+    
+
+# Looping through all keys
+print("\nLooping through all keys")
+favourite_languages = {
+    'jen': 'python',
+    'sarah': 'c',
+    'edward': 'ruby',
+    'phil': 'python',
+    }
+
+for name in favourite_languages.keys():
+    print(f"{name.title()}")
+
+for name in favourite_languages: #.keys() is the default method, so not needed
+    print(f"{name.title()}")
 
 
+# Only action for certain keys
+print("\nCertain keys only")
+favourite_languages = {
+    'jen': 'python',
+    'sarah': 'c',
+    'edward': 'ruby',
+    'phil': 'python',
+    }
+friends = ['phil', 'sarah']
+for name in favourite_languages.keys():
+    print(f"Hi {name.title()}.")
+    if name in friends:
+        language = favourite_languages[name].title()
+        print(f"\t{name.title()}, I see you love {language}!")
 
-
-
-
-
-
+if 'erin' not in favourite_languages.keys():
+    print("Erin, please take our poll!")
 
 
 

@@ -36,6 +36,7 @@ Methods:
 - .append(value), .insert(index, value), .pop(index), .remove(value) to edit lists where remove(value) only removes first occurence
 - .sort(reverse=), .reverse() to permanently organise lists
 - .get(key, optional value) to get dictionary values if key may not exist
+- .items(), .keys(), .values() to return list of key-value pairs, keys and values in a dictionary, used with loops where .keys() is default
 
 Functions:
 - del(obj_name) to delete an object (incl. dictionary key-value pairs, list items)
@@ -63,6 +64,7 @@ Multiple assignment:
 
 Loops:
 - for loop: use : and indentation
+	- dictionaries: for key, value, in dictionary.items()/keys()/values():
 - list comprehension allows to create lists in one line, [expression for loop] e.g. squares = [value**2 for value in range(1,11)]
 - if loop: use: and indentation
 	- uses conditional tests (True or False)
