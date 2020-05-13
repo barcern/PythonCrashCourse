@@ -153,9 +153,47 @@ for name in favourite_languages.keys():
 
 if 'erin' not in favourite_languages.keys():
     print("Erin, please take our poll!")
+    
+
+# Looping through keys in a particular order
+print("\nLooping through keys in a particular order")
+favourite_languages = {
+    'jen': 'python',
+    'sarah': 'c',
+    'edward': 'ruby',
+    'phil': 'python',
+    }
+
+for name in sorted(favourite_languages.keys()):
+    print(f"{name.title()}, thank you for taking the poll.")
+    
+for name in sorted(favourite_languages.keys(), reverse=True):
+    print(f"{name.title()}, thank you for taking the poll.")
 
 
+# Looping through all values
+print("\nLooping through all values")
+favourite_languages = {
+    'jen': 'python',
+    'sarah': 'c',
+    'edward': 'ruby',
+    'phil': 'python',
+    }
+print("The following languages have been mentioned:")
+for language in favourite_languages.values():
+    print(language.title())
 
+
+# Using set() to give a unique collection of values
+print("The following languages have been mentioned:")
+for language in set(favourite_languages.values()):
+    print(language.title())
+    
+
+# Create a test set
+print("\nCreating a set")
+languages = {'python', 'c', 'ruby', 'python'}
+print(languages)
 
 
 

@@ -28,6 +28,13 @@ Dictionaries:
 - to add or modify a key-value pair: dictionary[key] = value
 - order of key-value pairs retained
 
+Sets:
+- collection of items in which each item is unique
+- example_set = {'a', 'b', 'c'}
+- example_set = set(list)
+- items not retained in a specific order
+- if repeat placed into a set, repeat is ignored and removed
+
 Methods:
 - actions python performs on a piece of data
 - variable.method()
@@ -40,12 +47,13 @@ Methods:
 
 Functions:
 - del(obj_name) to delete an object (incl. dictionary key-value pairs, list items)
-- sorted(list, reverse=) to temporarily organise lists
+- sorted(list, reverse=) to temporarily sort lists alphabetically or numerically
 - range(first value, final value+1, step) in for loops, stops at final value so never prints it, range(6) gives 0-5
 - list() to create lists, e.g. list(range(5))
 - min(list) to give smallest value
 - max(list) to give largest value
 - sum(list) to give sum of all values
+- set(list) to give a unique collection of values in list
 
 Formatting:
 - \t for tab
@@ -64,7 +72,7 @@ Multiple assignment:
 
 Loops:
 - for loop: use : and indentation
-	- dictionaries: for key, value, in dictionary.items()/keys()/values():
+	- dictionaries: for key, value, in sorted/set(dictionary.items()/keys()/values()):
 - list comprehension allows to create lists in one line, [expression for loop] e.g. squares = [value**2 for value in range(1,11)]
 - if loop: use: and indentation
 	- uses conditional tests (True or False)
