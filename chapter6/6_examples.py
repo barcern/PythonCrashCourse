@@ -196,6 +196,70 @@ languages = {'python', 'c', 'ruby', 'python'}
 print(languages)
 
 
+# A list of dictionaries
+print("\nA list of dictionaries")
+alien_0 = {'colour': 'green', 'points': 5}
+alien_1 = {'colour': 'yellow', 'points': 10}
+alien_2 = {'colour': 'red', 'points': 15}
+
+aliens = [alien_0, alien_1, alien_2]
+for alien in aliens:
+    print(alien)
+
+
+# More complex example
+# Make an empty list for storing aliens
+print("\n")
+aliens = []
+
+# Make 30 green aliens
+for alien_number in range(30):
+    new_alien = {'colour': 'green', 'points': 5, 'speed': 'slow'}
+    aliens.append(new_alien)
+    
+# Show the first 5 aliens
+for alien in aliens[:5]:
+    print(alien)
+    
+# Alternatively
+for i in range(5):
+    print(aliens[i])
+
+# Show how many aliens have been created
+print("...")
+print(f"Total number of aliens: {len(aliens)}")
+
+# Edit some of the aliens
+for alien in aliens[:3]:
+    if alien['colour'] == 'green':
+        alien['colour'] = 'yellow'
+        alien['speed'] = 'medium'
+        alien['points'] = 10
+    elif alien['colour'] == 'yellow':
+        alien['colour'] = 'red'
+        alien['speed'] = 'fast'
+        alien['points'] = 15
+        
+# Show the first 5 aliens
+for alien in aliens[:5]:
+    print(alien)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

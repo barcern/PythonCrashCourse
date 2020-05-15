@@ -28,6 +28,9 @@ Dictionaries:
 - to add or modify a key-value pair: dictionary[key] = value
 - order of key-value pairs retained
 
+Nesting:
+- storing dictionaries in a list, or storing a list in a dictionary, or storing a dictionary in a dictionary
+
 Sets:
 - collection of items in which each item is unique
 - example_set = {'a', 'b', 'c'}
