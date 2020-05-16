@@ -245,15 +245,71 @@ for alien in aliens[:5]:
     print(alien)
 
 
+# A list in a dictionary
+print("\nA list in a dictionary")
+# Store information about a pizza being ordered
+pizza = {
+    'crust': 'thick',
+    'toppings': ['mushrooms', 'extra cheese'],
+    }
+
+# Summarise order
+print(f"You ordered a {pizza['crust']}-crust pizza with the following "
+      "toppings:")
+for topping in pizza['toppings']:
+    print(f"\t{topping}")
+    
+# Another example
+favourite_languages = {
+    'jen': ['python', 'ruby'],
+    'sarah': ['c'],
+    'edward': ['ruby', 'go'],
+    'phil': ['python', 'haskell'],
+    }
+
+# Print each person's favourite languages
+for name, languages in favourite_languages.items():
+    print(f"\n{name.title()}'s favourite languages are:")
+    for language in languages:
+        print(f"\t{language.title()}")
+
+# Alternatively - messier method
+for person in favourite_languages.keys():
+    print(f"{person.title()}'s favourite languages are:")
+    for language in favourite_languages[person]:
+        print(f"\t{language.title()}")
+    print("")
+
+# Refined to check if one or multiple favourite languages
+for name, languages in favourite_languages.items():
+    if (len(languages) == 1):
+        print(f"\n{name.title()}'s favourite language is:")
+    else:
+        print(f"\n{name.title()}'s favourite languages are:")
+    for language in languages:
+        print(f"\t{language.title()}")
 
 
-
-
-
-
-
-
-
+# A dictionary in a dictionary
+print("\nA dictionary in a dictionary")
+users = {
+    'aeinstein': {
+        'first': 'albert',
+        'last': 'einstein',
+        'location': 'princeton',
+        },
+    'mcurie': {
+        'first': 'marie',
+        'last': 'curie',
+        'location': 'paris',
+        },
+    }
+for username, info in users.items():
+    print(f"\nUsername: {username}")
+    full_name = f"{info['first'].title()} {info['last'].title()}"
+    location = f"{info['location'].title()}"
+    print(f"\tFull name: {full_name}")
+    print(f"\tLocation: {location}")
 
 
 

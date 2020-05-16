@@ -30,6 +30,7 @@ Dictionaries:
 
 Nesting:
 - storing dictionaries in a list, or storing a list in a dictionary, or storing a dictionary in a dictionary
+- avoid nesting too deeply
 
 Sets:
 - collection of items in which each item is unique
