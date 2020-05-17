@@ -58,6 +58,8 @@ Functions:
 - max(list) to give largest value
 - sum(list) to give sum of all values
 - set(list) to give a unique collection of values in list
+- input(prompt) to obtain user input in string format
+- int(string) to convert a string to numerical format
 
 Formatting:
 - \t for tab
@@ -71,8 +73,9 @@ Conditional tests (Boolean expressions):
 - in for checking whether value in a list
 - not in for checking whether value not in a list
 
-Multiple assignment:
-- e.g. x, y, z = 0, 0, 0
+Other:
+- multiple assignment: e.g. x, y, z = 0, 0, 0
+- modulo operator: returns remainder, e.g. 4 % 3 returns 1
 
 Loops:
 - for loop: use : and indentation
@@ -89,5 +92,5 @@ Types of errors:
 - indentation
 - logical
 - syntax
-- type e.g. when trying to change value in a tuple
+- type e.g. when trying to change value in a tuple, or compare a string to an integer
 - key
