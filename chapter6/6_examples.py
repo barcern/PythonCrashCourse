@@ -310,17 +310,3 @@ for username, info in users.items():
     location = f"{info['location'].title()}"
     print(f"\tFull name: {full_name}")
     print(f"\tLocation: {location}")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
