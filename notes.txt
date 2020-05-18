@@ -48,6 +48,7 @@ Methods:
 - .sort(reverse=), .reverse() to permanently organise lists
 - .get(key, optional value) to get dictionary values if key may not exist
 - .items(), .keys(), .values() to return list of key-value pairs, keys and values in a dictionary, used with loops where .keys() is default
+- .isnumeric() to check if all characters in a string are numeric
 
 Functions:
 - del(obj_name) to delete an object (incl. dictionary key-value pairs, list items)
