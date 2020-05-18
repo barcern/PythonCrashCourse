@@ -60,6 +60,8 @@ Functions:
 - set(list) to give a unique collection of values in list
 - input(prompt) to obtain user input in string format
 - int(string) to convert a string to numerical format
+- break to exit any loop immediately
+- continue to skip rest of while loop and go back to the start
 
 Formatting:
 - \t for tab
@@ -76,17 +78,24 @@ Conditional tests (Boolean expressions):
 Other:
 - multiple assignment: e.g. x, y, z = 0, 0, 0
 - modulo operator: returns remainder, e.g. 4 % 3 returns 1
+- += operator is equivalent to x = x + a
 
 Loops:
 - for loop: use : and indentation
 	- dictionaries: for key, value, in sorted/set(dictionary.items()/keys()/values()):
 - list comprehension allows to create lists in one line, [expression for loop] e.g. squares = [value**2 for value in range(1,11)]
-- if loop: use: and indentation
+- if loop: use : and indentation
 	- uses conditional tests (True or False)
 	- case sensitive, use item.lower() == 'x' for testing
 	- and / or for checking for multiple conditions
 	- if, elif, else, run multiple if statements if each test needs to be evaluated / acted on
 	- if list: checks if list is empty or if not list: checks if list is not empty
+- while loop: use : and indentation
+	- runs while a condition is True
+	- flag: set to True when multiple conditions are all live, so while loop only checks if flag is True (not each condition)
+	- break statement: exits while loop immediately, used with while True: loops
+	- continue statement: skips rest of loop and goes back to the start
+	- ctrl+C to exit infinite loop
 
 Types of errors:
 - indentation
