@@ -27,6 +27,7 @@ Dictionaries:
 - to access a value: dictionary[key]
 - to add or modify a key-value pair: dictionary[key] = value
 - order of key-value pairs retained
+- when used with user input: dictionary[key] = [value]
 
 Nesting:
 - storing dictionaries in a list, or storing a list in a dictionary, or storing a dictionary in a dictionary
@@ -84,6 +85,7 @@ Other:
 Loops:
 - for loop: use : and indentation
 	- dictionaries: for key, value, in sorted/set(dictionary.items()/keys()/values()):
+	- shouldn't use for loops to midfy lists and dictionaries, use while loops instead
 - list comprehension allows to create lists in one line, [expression for loop] e.g. squares = [value**2 for value in range(1,11)]
 - if loop: use : and indentation
 	- uses conditional tests (True or False)
@@ -97,6 +99,8 @@ Loops:
 	- break statement: exits while loop immediately, used with while True: loops
 	- continue statement: skips rest of loop and goes back to the start
 	- ctrl+C to exit infinite loop
+	- use while list: to loop through all items in a list
+	- use while 'item' in list: to loop through list until 
 
 Types of errors:
 - indentation
