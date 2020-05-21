@@ -52,22 +52,29 @@ Methods:
 - .isnumeric() to check if all characters in a string are numeric
 
 Functions:
-- del(obj_name) to delete an object (incl. dictionary key-value pairs, list items)
-- sorted(list, reverse=) to temporarily sort lists alphabetically or numerically
-- range(first value, final value+1, step) in for loops, stops at final value so never prints it, range(6) gives 0-5
-- list() to create lists, e.g. list(range(5))
-- min(list) to give smallest value
-- max(list) to give largest value
-- sum(list) to give sum of all values
-- set(list) to give a unique collection of values in list
-- input(prompt) to obtain user input in string format
-- int(string) to convert a string to numerical format
-- break to exit any loop immediately
-- continue to skip rest of while loop and go back to the start
+- blocks of code designed to do one specific job
+- def function(input): called function definition
+- to call a function, type write its name with necessary input
+- parameter: piece of information the function requires, defined as a variable
+- argument: piece of information passed to the function call, specific data value
+- commonly used inbuilt functions:
+	- del(obj_name) to delete an object (incl. dictionary key-value pairs, list items)
+	- sorted(list, reverse=) to temporarily sort lists alphabetically or numerically
+	- range(first value, final value+1, step) in for loops, stops at final value so never prints it, range(6) gives 0-5
+	- list() to create lists, e.g. list(range(5))
+	- min(list) to give smallest value
+	- max(list) to give largest value
+	- sum(list) to give sum of all values
+	- set(list) to give a unique collection of values in list
+	- input(prompt) to obtain user input in string format
+	- int(string) to convert a string to numerical format
+	- break to exit any loop immediately
+	- continue to skip rest of while loop and go back to the start
 
 Formatting:
 - \t for tab
 - \n for new line
+- """x""" for documenting code, called doctring
 
 Conditional tests (Boolean expressions):
 - = for assigning
