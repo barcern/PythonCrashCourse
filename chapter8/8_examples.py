@@ -120,6 +120,28 @@ musician = build_person('jimi', 'hendrix')
 print(musician)
 
 
+# Functions with while loops - break statement
+print("\nFunctions with while loops")
+def get_formatted_name(first_name, last_name):
+    """Return a full name, neatly formatted."""
+    full_name = f"{first_name} {last_name}"
+    return full_name.title()
+
+# Using a break statement
+while True:
+    print("\nPlease tell me your name.")
+    print("(enter 'q' at any time to quit')")
+    f_name = input("First name: ")
+    if (f_name == 'q'):
+        break
+    l_name = input("Last name: ")
+    if (l_name == 'q'):
+        break
+    # Call get_formatted_name
+    formatted_name = get_formatted_name(f_name, l_name)
+    print(f"\nHello, {formatted_name}!")
+    
+
 
 
 
