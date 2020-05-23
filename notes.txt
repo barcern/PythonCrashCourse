@@ -55,13 +55,14 @@ Functions:
 - blocks of code designed to do one specific job
 - def function(input): called function definition
 - to call a function, type write its name with necessary input
+- code with functions easier to maintain and extend
 - parameter: piece of information the function requires, defined as a variable
 	- can set a default value in function definition with mandatory parameters first
 	- use parameter='' or parameter=None or parameter=0 to indicate optional parameter
 - argument: piece of information passed to the function call, specific data value
 	 - positional: order in function definition matched to order in function call, order matters
 	 - keyword: name-value pair passed to a function, order irrelevant
-	 - lists and dictionaries
+	 - lists and dictionaries, feed in list[:] to use a copy of list, more efficient to use original list
 - return value: value returned by function, use return statement, can return any data entity
 - commonly used inbuilt functions:
 	- del(obj_name) to delete an object (incl. dictionary key-value pairs, list items)

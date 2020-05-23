@@ -142,6 +142,101 @@ while True:
     print(f"\nHello, {formatted_name}!")
     
 
+# Passing a list
+print("\nPassing a list")
+def greet_users(names):
+    """Print a simple greeting to each user in the list."""
+    for name in names:
+        msg = f"Hello, {name.title()}!"
+        print(msg)
+
+usernames = ['hannah', 'ty', 'margot']
+greet_users(usernames)
+
+
+# Modifying a list outside of a function
+print("\nModifying a list outside of a function")
+# Start with some design that need to be printed
+unprinted_designs = ['phone case', 'robot pendant', 'dodecahedron']
+completed_models = []
+
+# Simulate printing each design, until none are left
+# Move each design to completed_models after printing
+while unprinted_designs:
+    current_design = unprinted_designs.pop()
+    print(f"Printing model: {current_design}.")
+    completed_models.append(current_design)
+
+# Display all completed designs
+print("The following models have been printed:")
+for completed_model in completed_models:
+    print(completed_model)
+    
+
+# Modifying a list using functions
+print("\nModifying a list using functions")
+def print_models(unprinted_designs, completed_models):
+    """
+    Simulate printing each design, until none are left.
+    Move each design to completed_models after printing.
+    """
+    while unprinted_designs:
+        current_design = unprinted_designs.pop()
+        print(f"Printing model: {current_design}.")
+        completed_models.append(current_design)
+        
+def show_completed_models(completed_models):
+    """Show all the models that were printed."""
+    print("The following models have been printed:")
+    for completed_model in completed_models:
+        print(completed_model)
+        
+unprinted_designs = ['phone case', 'robot pendant', 'dodecahedron']
+completed_models = []
+
+print_models(unprinted_designs, completed_models)
+show_completed_models(completed_models)
+
+
+# Preventing a function from modifying a list
+print("\nPreventing a function from modifying a list")
+unprinted_designs = ['phone case', 'robot pendant', 'dodecahedron']
+completed_models = []
+
+# Feed a copy of list into function using list[:]
+print_models(unprinted_designs[:], completed_models)
+show_completed_models(completed_models)
+print(unprinted_designs)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
