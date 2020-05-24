@@ -59,9 +59,12 @@ Functions:
 - parameter: piece of information the function requires, defined as a variable
 	- can set a default value in function definition with mandatory parameters first
 	- use parameter='' or parameter=None or parameter=0 to indicate optional parameter
+	- use *parameter for args to be stored in an empty tuple, allowing for an arbitrary number of args, must be defined last
+	- use **parameter to create a dictionary and store all key-value arguments in it
 - argument: piece of information passed to the function call, specific data value
 	 - positional: order in function definition matched to order in function call, order matters
 	 - keyword: name-value pair passed to a function, order irrelevant
+	 - arbitrary: not pre-defined, pass as a tuple using *parameter (*args) or key-value pairs as **parameter (**kwargs)
 	 - lists and dictionaries, feed in list[:] to use a copy of list, more efficient to use original list
 - return value: value returned by function, use return statement, can return any data entity
 - commonly used inbuilt functions:
