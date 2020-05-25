@@ -5,6 +5,11 @@ Created on Thu May 21 08:27:50 2020
 @author: barbora
 """
 
+# Import statements
+#import c8_examples_module_pizza
+#from c8_examples_module_pizza import make_pizza
+
+
 # Simple function
 def greet_user():
     """Display a simple greeting."""
@@ -253,38 +258,30 @@ user_profile = build_profile('albert', 'einstein', location='princeton',
                              field='physics')
 print(user_profile)
 
+# Importing modules - statements should be at top of file
+print("\nImporting modules")
+# Import full module
+import c8_examples_module_pizza
+c8_examples_module_pizza.make_pizza_module(16, 'pepperoni')
+c8_examples_module_pizza.make_pizza_module(12, 'sweetcorn', 'mushrooms',
+                                            'extra cheese')
 
+# Import specific function
+from c8_examples_module_pizza import make_pizza_module
+make_pizza_module(16, 'pepperoni')
+make_pizza_module(12, 'sweetcorn', 'mushrooms', 'extra cheese')
 
+# Import specific function with alias
+from c8_examples_module_pizza import make_pizza_module as mp
+mp(16, 'pepperoni')
+mp(12, 'sweetcorn', 'mushrooms', 'extra cheese')
 
+# Import full module with alias
+import c8_examples_module_pizza as p
+p.make_pizza_module(16, 'pepperoni')
+p.make_pizza_module(12, 'sweetcorn', 'mushrooms', 'extra cheese')
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# Import all functions - not recommended, can overwrite existing functions
+from c8_examples_module_pizza import *
+make_pizza_module(16, 'pepperoni')
+make_pizza_module(12, 'sweetcorn', 'mushrooms', 'extra cheese')

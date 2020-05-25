@@ -67,6 +67,14 @@ Functions:
 	 - arbitrary: not pre-defined, pass as a tuple using *parameter (*args) or key-value pairs as **parameter (**kwargs)
 	 - lists and dictionaries, feed in list[:] to use a copy of list, more efficient to use original list
 - return value: value returned by function, use return statement, can return any data entity
+- use modules to store functions in a separate file, use import statements
+	- should be defined at the start of the file, can use alias to shorter function name
+	- to import an entire module: import module_name or import module_name as mn
+		- call functions using module_name.function_name() if not imported specific functions
+	- to import all or specific functions from a module: 
+		- from module_name import * (this can lead to module functions overwriting existing functions - not recommended)
+		- from module_name import function_0, function_1 or from module_name import function_name as fn
+		- call functions using function_name()
 - commonly used inbuilt functions:
 	- del(obj_name) to delete an object (incl. dictionary key-value pairs, list items)
 	- sorted(list, reverse=) to temporarily sort lists alphabetically or numerically
@@ -128,3 +136,11 @@ Types of errors:
 - syntax
 - type e.g. when trying to change value in a tuple, or compare a string to an integer, call a function with wrong number of arguments
 - key
+
+Styling
+- def function_name(par0, par1='default value')
+- function_name(val0, par1='value')
+- def function_name(
+		par0, par1, par2,
+		par3, par4, par5):
+	function body...
