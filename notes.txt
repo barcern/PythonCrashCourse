@@ -135,7 +135,8 @@ Object-oriented programming:
 - effective approach where classes define general behaviour for a category of objects, objects based on classes with additional unique traits
 - instantiation = making a specific object from a class, then using instance of a class to perform actions
 - creating a class:
-	- definition with capitalisation for class name, e.g. class Dog:
+	- class Class_name:
+		- definition with capitalisation for class name, e.g. class Dog:
 	- a function that is part of a class is called a method
 	- def __init__(self, par1, par2):
 		- must use two trailing underscores on each side to ensure python calls it when class used
@@ -150,6 +151,11 @@ Object-oriented programming:
 	- def function1(self, par3):
 		- other methods must include self, and may include other parameters
 		- available to instances
+- creating an instance:
+	- my_instance = Class_name(par1, par2) which calls __init__ method in the class itself > creates instance > assigns attributes
+	- my_instance.par1 to access attributes
+	- my_instance.method() to call a method from the related class
+	- can create multiple instances which must have unique name or unique spot in list/dictionary
 
 Types of errors:
 - indentation
