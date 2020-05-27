@@ -89,6 +89,7 @@ Functions:
 	- break to exit any loop immediately
 	- continue to skip rest of while loop and go back to the start
 	- return to return a value in a function, provide a variable to assign return value to
+	- __init__(self, par1, par2), to initialise parameters in classes
 
 Formatting:
 - \t for tab
@@ -129,6 +130,26 @@ Loops:
 	- ctrl+C to exit infinite loop
 	- use while list: to loop through all items in a list
 	- use while 'item' in list: to loop through list until 
+
+Object-oriented programming:
+- effective approach where classes define general behaviour for a category of objects, objects based on classes with additional unique traits
+- instantiation = making a specific object from a class, then using instance of a class to perform actions
+- creating a class:
+	- definition with capitalisation for class name, e.g. class Dog:
+	- a function that is part of a class is called a method
+	- def __init__(self, par1, par2):
+		- must use two trailing underscores on each side to ensure python calls it when class used
+		- must include self as first parameter
+			- reference to instance itself
+			- gives instance access to attributes and methods in class
+		- when creating an instance, don't need to pass self but need to pass par1 and par2
+		- self.par1 = par1
+			- makes the variable available to every method in class and to all instances
+			- associates parameter par1 with variable par1 and attaches it to instance created
+			- variables accessible through instances like this are called attributes
+	- def function1(self, par3):
+		- other methods must include self, and may include other parameters
+		- available to instances
 
 Types of errors:
 - indentation
