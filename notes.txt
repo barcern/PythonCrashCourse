@@ -148,6 +148,8 @@ Object-oriented programming:
 			- makes the variable available to every method in class and to all instances
 			- associates parameter par1 with variable par1 and attaches it to instance created
 			- variables accessible through instances like this are called attributes
+		- self.attribute = value
+			- can initialise non-input attributes in __init__()
 	- def function1(self, par3):
 		- other methods must include self, and may include other parameters
 		- available to instances
@@ -156,6 +158,10 @@ Object-oriented programming:
 	- my_instance.par1 to access attributes
 	- my_instance.method() to call a method from the related class
 	- can create multiple instances which must have unique name or unique spot in list/dictionary
+- modifying attributes:
+	- modify directly: instance.attribute = new_value
+	- modify through a method: write a method in class to update specific attribute, parameter does not need to be in __init__(), self.attr = new_value
+	- incrementing through a method: write a method in class to increment specific attribute, parameter does not need to be in __init__(), self.attr += increment
 
 Types of errors:
 - indentation
