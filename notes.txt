@@ -166,11 +166,14 @@ Object-oriented programming:
 - inheritance:
 	- child class inherits any/all attributes and methods of parent class + can define new methods and attributes
 	- parent class must be in same file and appear before child class
+	- to override a method from parent class, use same name in child class and redefine functionality
 	- also called superclass and subclass
 	- class ChildClass(ParentClass):
 		def __init__(self, parent_attr1, parent_attr2):
 			super().__init__(parent_attr1, parent_attr2)
+			self.attr3 = Other_Class()
 	- super() function allows to call parent class method from child class
+	- can create an instance and use it as an attribute in __init__(), then refer to the attribute as instance.attribute.other_class_method()
 
 Types of errors:
 - indentation
