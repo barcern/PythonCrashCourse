@@ -90,6 +90,7 @@ Functions:
 	- continue to skip rest of while loop and go back to the start
 	- return to return a value in a function, provide a variable to assign return value to
 	- __init__(self, par1, par2), to initialise parameters in classes
+	- super() to call parent class method from child class, used as super().__init__(parent_attr1, parent_attr2)
 
 Formatting:
 - \t for tab
@@ -162,6 +163,14 @@ Object-oriented programming:
 	- modify directly: instance.attribute = new_value
 	- modify through a method: write a method in class to update specific attribute, parameter does not need to be in __init__(), self.attr = new_value
 	- incrementing through a method: write a method in class to increment specific attribute, parameter does not need to be in __init__(), self.attr += increment
+- inheritance:
+	- child class inherits any/all attributes and methods of parent class + can define new methods and attributes
+	- parent class must be in same file and appear before child class
+	- also called superclass and subclass
+	- class ChildClass(ParentClass):
+		def __init__(self, parent_attr1, parent_attr2):
+			super().__init__(parent_attr1, parent_attr2)
+	- super() function allows to call parent class method from child class
 
 Types of errors:
 - indentation
