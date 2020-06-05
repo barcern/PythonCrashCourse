@@ -174,6 +174,16 @@ Object-oriented programming:
 			self.attr3 = Other_Class()
 	- super() function allows to call parent class method from child class
 	- can create an instance and use it as an attribute in __init__(), then refer to the attribute as instance.attribute.other_class_method()
+- use modules to store classes in a separate file, use import statements
+	- should be defined at the start of the file, can use alias to shorter class name
+	- to import an entire module: import module_name or import module_name as mn
+		- call classes using module_name.Class_Name(parameters)
+		- avoids name clashes
+	- to import all or specific classes from a module: 
+		- from module_name import * (this can lead to module functions overwriting existing functions - not recommended)
+		- from module_name import Class_0, Class_1 or from module_name import Class_Name as CN
+		- call functions using function_name()
+	- may need to import a module into a module
 
 Types of errors:
 - indentation

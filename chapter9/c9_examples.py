@@ -327,6 +327,86 @@ my_tesla.battery.describe_battery()
 my_tesla.battery.get_range()
 
 
+# Importing a single class
+from c9_examples_car import CarModule
+
+my_new_car = CarModule('audi', 'a4', 2019)
+print(my_new_car.get_descriptive_name())
+
+my_new_car.odometer_reading = 23
+my_new_car.read_odometer()
+
+
+# Importing another class from same module
+from c9_examples_car import ElectricCarModule
+
+my_tesla_module = ElectricCarModule('tesla', 'model s', 2019)
+print(my_tesla_module.get_descriptive_name())
+my_tesla_module.battery.describe_battery()
+my_tesla_module.battery.get_range()
+
+
+# Importing multiple classes from a module
+from c9_examples_car import CarModule, ElectricCarModule
+
+my_beetle_module = CarModule('volkswagen', 'beetle', 2019)
+print(my_beetle_module.get_descriptive_name())
+
+my_tesla_module = ElectricCarModule('tesla', 'roadster', 2019)
+print(my_tesla_module.get_descriptive_name())
+
+
+# Importing an entire module
+import c9_examples_car
+
+my_beetle_module = c9_examples_car.CarModule('volkswagen', 'beetle', 2019)
+print(my_beetle_module.get_descriptive_name())
+
+my_tesla_module = c9_examples_car.ElectricCarModule('tesla', 'roadster', 2019)
+print(my_tesla_module.get_descriptive_name())
+
+
+# Importing all classes from a module - not recommended
+from c9_examples_car import *
+
+my_beetle_module = CarModule('volkswagen', 'beetle', 2019)
+print(my_beetle_module.get_descriptive_name())
+
+
+# Importing a module into a module
+from c9_examples_gascar import CarModule
+from c9_examples_electriccar import ElectricCarModule
+
+my_beetle_module = CarModule('volkswagen', 'beetle', 2019)
+print(my_beetle_module.get_descriptive_name())
+
+my_tesla_module = ElectricCarModule('tesla', 'roadster', 2019)
+print(my_tesla_module.get_descriptive_name())
+
+
+# Using aliases
+from c9_examples_electriccar import ElectricCarModule as ECM
+
+my_tesla_module = ECM('tesla', 'roadster', 2019)
+print(my_tesla_module.get_descriptive_name())
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
