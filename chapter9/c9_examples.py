@@ -328,6 +328,7 @@ my_tesla.battery.get_range()
 
 
 # Importing a single class
+print("\nImporting")
 from c9_examples_car import CarModule
 
 my_new_car = CarModule('audi', 'a4', 2019)
@@ -391,25 +392,15 @@ my_tesla_module = ECM('tesla', 'roadster', 2019)
 print(my_tesla_module.get_descriptive_name())
 
 
+# Python standard library
+print("\nUsing Python standard library")
 
+# Use randint() to get a random integer between two integers
+from random import randint
+print(randint(1, 6))
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# Use choice() to randomly select an element from a list or tuple
+from random import choice
+players = ['charles', 'martina', 'michael', 'florence', 'eli']
+first_up = choice(players)
+print(first_up)

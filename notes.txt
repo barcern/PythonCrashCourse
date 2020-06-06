@@ -184,6 +184,10 @@ Object-oriented programming:
 		- from module_name import Class_0, Class_1 or from module_name import Class_Name as CN
 		- call functions using function_name()
 	- may need to import a module into a module
+	
+- python standard library
+	- set of modules included with python installation
+	- import and use
 
 Types of errors:
 - indentation
