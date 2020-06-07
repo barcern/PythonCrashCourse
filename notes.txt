@@ -197,9 +197,14 @@ Types of errors:
 - key
 
 Styling
-- def function_name(par0, par1='default value')
-- function_name(val0, par1='value')
-- def function_name(
-		par0, par1, par2,
-		par3, par4, par5):
-	function body...
+- functions:
+	- def function_name(par0, par1='default value')
+	- function_name(val0, par1='value')
+	- def function_name(
+			par0, par1, par2,
+			par3, par4, par5):
+		function body...
+- classes:
+	- class names in CamelCase, instances and modules lowercase and with underscores
+	- include docstrings
+	- import statements for standard libraries first, separate own by blank line

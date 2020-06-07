@@ -34,3 +34,43 @@ while flag:
         flag = False
     
 print(all_chosen)
+
+
+# Alternatively, split the above into functions
+raffle_available = [1, 5, 23, 6, 2, 7, 4, 9, 43, 54, 'e', 'g', 'c', 'd', 'm']
+my_tickets = [23, 'm']
+counter = 0
+
+def pick_ticket(local_list):
+    # Function to choose a random value from a list
+    chosen = choice(local_list)
+    return chosen
+
+def counter(counter):
+    # Function to count the number of attempts to pick a ticket
+    counter += 1
+    return counter
+    
+def check_ticket(my_ticket_list, ticket_list):
+    # Function to check whether a value selected in pick_ticket() matches
+    # one of my tickets
+    count = 0
+    flag = True
+    local_list = ticket_list
+    # Loop until a matching ticket found
+    while flag:
+        # Call pick_ticket() to choose a ticket
+        chosen = pick_ticket(local_list)
+        # Call counter() to count attempts
+        count = counter(count)
+        # Check if chosen ticket is one of mine
+        if chosen in my_ticket_list:
+            print("I have won!")
+            flag = False
+        # Remove chosen value from list of available values
+        local_list.remove(chosen)
+    final_count = count
+    print(f"The final count is {final_count}")
+    
+pick_ticket(raffle_available)
+check_ticket(my_tickets, raffle_available)

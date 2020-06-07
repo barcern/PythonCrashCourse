@@ -31,4 +31,4 @@ while len(prize_positions) < 4:
 print(prize_positions)
 print(winners)
     
-# Alternatively, use choice() from random module
+# Alternatively, this can be achieved using choice() from random module
