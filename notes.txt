@@ -50,6 +50,7 @@ Methods:
 - .get(key, optional value) to get dictionary values if key may not exist
 - .items(), .keys(), .values() to return list of key-value pairs, keys and values in a dictionary, used with loops where .keys() is default
 - .isnumeric() to check if all characters in a string are numeric
+- .read() to read a file, returns an empty string at end of file
 
 Functions:
 - blocks of code designed to do one specific job
@@ -91,6 +92,9 @@ Functions:
 	- return to return a value in a function, provide a variable to assign return value to
 	- __init__(self, par1, par2), to initialise parameters in classes
 	- super() to call parent class method from child class, used as super().__init__(parent_attr1, parent_attr2)
+	- open(file_name) to access a file
+	- with open(file_name) to access a file and automatically close it when no longer needed
+	- close(file_name) to close a file, may be risky if file not properly closed
 
 Formatting:
 - \t for tab
@@ -185,9 +189,14 @@ Object-oriented programming:
 		- call functions using function_name()
 	- may need to import a module into a module
 	
-- python standard library
+- Python standard library:
 	- set of modules included with python installation
 	- import and use
+
+- Files:
+	- with open('file_name.txt') as file_object:
+		contents = file_object.read()
+		- to read an entire file, with indicates to close file when no longer needed
 
 Types of errors:
 - indentation
