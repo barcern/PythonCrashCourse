@@ -98,6 +98,8 @@ Functions:
 	- open(file_name) to access a file
 	- with open(file_name) to access a file and automatically close it when no longer needed
 	- close(file_name) to close a file, may be risky if file not properly closed
+	- write() to write a string into a file, doesn't add newlines, to be used with 'w', 'a' and 'r+'
+	- str() to convert a non-string to a string
 
 Formatting:
 - \t for tab
@@ -197,14 +199,20 @@ Object-oriented programming:
 	- import and use
 
 - Files:
-	- with open('/users/.../file_name.txt') as file_object:
+	- with open('/users/.../file_name.txt', mode) as file_object:
 		contents = file_object.read()
-		- to read an entire file, with indicates to close file when no longer needed
+		OR
+		file_object.write("string")
+		- modes: 'r' to read (default), 'w' to write, 'a' to append, 'r+' to read and write
+		- with indicates to close file when no longer needed
 		- file_object is an alias
+		- use write() with both 'w', 'a' and 'r+'
 	- absolute or relative file paths, use / or \\ to account for strings
 	- for line in file_object:
 		- to handle file line by line
 	- interprets all text in file as string -> convert using int() or float()
+	- to write non-string data into a file, must convert to string first usng str()
+	- if writing to an existing file which, existing data will be erased first
 
 Types of errors:
 - indentation
