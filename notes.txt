@@ -194,11 +194,11 @@ Object-oriented programming:
 		- call functions using function_name()
 	- may need to import a module into a module
 	
-- Python standard library:
+Python standard library:
 	- set of modules included with python installation
 	- import and use
 
-- Files:
+Files:
 	- with open('/users/.../file_name.txt', mode) as file_object:
 		contents = file_object.read()
 		OR
@@ -213,6 +213,12 @@ Object-oriented programming:
 	- interprets all text in file as string -> convert using int() or float()
 	- to write non-string data into a file, must convert to string first usng str()
 	- if writing to an existing file which, existing data will be erased first
+
+Exceptions:
+	- exceptions thrown when error occurs
+	- exception handled > code keep running, exception not handled > traceback shown
+	- try-except blocks
+		- 
 
 Types of errors:
 - indentation
