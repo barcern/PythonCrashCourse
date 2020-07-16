@@ -216,9 +216,15 @@ Files:
 
 Exceptions:
 	- exceptions thrown when error occurs
-	- exception handled > code keep running, exception not handled > traceback shown
+	- exception handled > code keeps running, exception not handled > traceback shown
 	- try-except blocks
-		- 
+		try:
+			code which may cause an error
+		except error_name:
+			error message
+		else:
+			code dependent on try block succeeding
+	- tracebacks: confuse non-technical users, can be used by malicious users
 
 Types of errors:
 - indentation
@@ -226,6 +232,7 @@ Types of errors:
 - syntax
 - type e.g. when trying to change value in a tuple, or compare a string to an integer, call a function with wrong number of arguments
 - key
+- zerodivisionerror
 
 Styling
 - functions:
