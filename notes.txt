@@ -53,6 +53,7 @@ Methods:
 - .read() to read a file, returns an empty string at end of file (not in spyder?)
 - .readlines() to read individual lines in a file, produces a list
 - .replace(original, new) to replace part of a string with a new value temporarily
+- .split() to separate a string into parts by spaces
 
 Functions:
 - blocks of code designed to do one specific job
@@ -100,6 +101,7 @@ Functions:
 	- close(file_name) to close a file, may be risky if file not properly closed
 	- write() to write a string into a file, doesn't add newlines, to be used with 'w', 'a' and 'r+'
 	- str() to convert a non-string to a string
+	- pass to fail silently in try-except block
 
 Formatting:
 - \t for tab
@@ -221,10 +223,11 @@ Exceptions:
 		try:
 			code which may cause an error
 		except error_name:
-			error message
+			pass or print(error_message)
 		else:
 			code dependent on try block succeeding
 	- tracebacks: confuse non-technical users, can be used by malicious users
+	- commonly used for external errors (user input, files, network availability etc.)
 
 Types of errors:
 - indentation
@@ -232,7 +235,8 @@ Types of errors:
 - syntax
 - type e.g. when trying to change value in a tuple, or compare a string to an integer, call a function with wrong number of arguments
 - key
-- zerodivisionerror
+- ZeroDivisionError
+- FileNotFoundError
 
 Styling
 - functions:
