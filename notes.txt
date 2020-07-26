@@ -54,6 +54,7 @@ Methods:
 - .readlines() to read individual lines in a file, produces a list
 - .replace(original, new) to replace part of a string with a new value temporarily
 - .split() to separate a string into parts by spaces
+- .count('sub-string') to count how many times a sub-string appears in a string
 
 Functions:
 - blocks of code designed to do one specific job
@@ -237,6 +238,8 @@ Types of errors:
 - key
 - ZeroDivisionError
 - FileNotFoundError
+- ValueError
+- UnicodeDecodeError
 
 Styling
 - functions:
