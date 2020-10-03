@@ -55,6 +55,8 @@ Methods:
 - .replace(original, new) to replace part of a string with a new value temporarily
 - .split() to separate a string into parts by spaces
 - .count('sub-string') to count how many times a sub-string appears in a string
+- json.dump(values, filename) to write data into JSON file
+- json.load(filename) to load data into python
 
 Functions:
 - blocks of code designed to do one specific job
@@ -216,6 +218,11 @@ Files:
 	- interprets all text in file as string -> convert using int() or float()
 	- to write non-string data into a file, must convert to string first usng str()
 	- if writing to an existing file which, existing data will be erased first
+	
+Storing data:
+	- use JSON (JavaScript Object Notation) for storing and sharing data, used by many languages
+	- json.dump(values, filename) to write data into JSON file
+	- json.load(filename) to load data into python
 
 Exceptions:
 	- exceptions thrown when error occurs

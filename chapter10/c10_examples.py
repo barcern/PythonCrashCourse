@@ -231,7 +231,59 @@ filenames = ['c10_examples_alice.txt', 'c10_examples_metamorphosis.txt',
              'c10_examples_littlewomen.txt','c10_examples_drjekyll.txt']
 for file in filenames:
     count_words_silent_fail(file)
+    
 
+# Storing data using JSON
+print("\nUsing JSON")
+import json
+
+numbers = [2, 3, 5, 7, 11, 13]
+
+filename_numbers = 'c10_examples_numbers.json'
+with open(filename_numbers, 'w') as f:
+    json.dump(numbers, f)
+
+
+# Loading data using JSON
+import json
+
+filename_numbers = 'c10_examples_numbers.json'
+with open(filename_numbers, 'r') as f:
+    numbers_loaded = json.load(f)
+    
+print(numbers_loaded)
+
+
+# Storing and loading users' data
+import json
+
+username = input("What is your name? ")
+
+filename = 'c10_examples_username.json'
+with open(filename, 'w') as f:
+    json.dump(username, f)
+    print(f"We'll remember you when you come back, {username}!")
+    
+with open(filename) as f:
+    username_loaded = json.load(f)
+    print(f"Welcome back, {username_loaded}!")
+    
+# Combine with a try-except block and make neater
+# Load the username, if it has been stored previously
+# Otherwise, prompt for the username and store it
+import json    
+
+filename = "c10_examples_username.json"
+try:
+    with open(filename) as f:
+        username = json.load(f)
+except FileNotFoundError:
+    username = input("What is your name? ")
+    with open(filename, 'w') as f:
+        json.dump(username, f)
+        print(f"We'll remember you when you come back, {username}!")
+else:
+    print(f"Welcome back, {username}!")
 
 
 
