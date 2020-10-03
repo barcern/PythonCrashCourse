@@ -126,6 +126,7 @@ Other:
 - modulo operator: returns remainder, e.g. 4 % 3 returns 1
 - += operator is equivalent to x = x + a
 - refactoring = breaking up code into functions / classes with specific jobs
+- use an empty return statement to leave function as soon as return is reached
 
 Loops:
 - for loop: use : and indentation
