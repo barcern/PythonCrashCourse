@@ -125,6 +125,7 @@ Other:
 - multiple assignment: e.g. x, y, z = 0, 0, 0
 - modulo operator: returns remainder, e.g. 4 % 3 returns 1
 - += operator is equivalent to x = x + a
+- refactoring = breaking up code into functions / classes with specific jobs
 
 Loops:
 - for loop: use : and indentation
