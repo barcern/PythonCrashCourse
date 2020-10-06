@@ -262,3 +262,8 @@ Styling
 	- class names in CamelCase, instances and modules lowercase and with underscores
 	- include docstrings
 	- import statements for standard libraries first, separate own by blank line
+	
+Testing
+- module unittest
+- unit test = verifies that one specific aspect of a function's behaviour is correct
+- test case = collection of unit tests
