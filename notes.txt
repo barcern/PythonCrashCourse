@@ -267,3 +267,11 @@ Testing
 - module unittest
 - unit test = verifies that one specific aspect of a function's behaviour is correct
 - test case = collection of unit tests
+- steps:
+	- import unittest and function to be tested
+	- create a class to contain tests, must inherit from unittest.TestCase
+	- create test methods within class, must be called test_descriptive_name
+	- e.g. use self.assertEqual(variable, expected_result) to test
+	- to execute testing
+	if __name__ == '__main__':
+		unittest.main()
