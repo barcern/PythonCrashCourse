@@ -6,7 +6,20 @@ Created on Mon Oct  5 23:00:09 2020
 """
 
 # Create an example function
-def get_formatted_name(first, last):
+# Version 1
+# def get_formatted_name(first, last):
+# Failing version 1
+#def get_formatted_name(first, middle, last):
+# Corrected version
+def get_formatted_name(first, last, middle=''):
     """Generate a neatly formatted full name."""
-    full_name = f"{first} {last}"
+    # Version 1
+    # full_name = f"{first} {last}"
+    # Failing version 1
+    full_name = f"{first} {middle} {last}"
+    # Corrected
+    if middle:
+        full_name = f"{first} {middle} {last}"
+    else:
+        full_name = f"{first} {last}"
     return full_name.title()
