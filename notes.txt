@@ -275,3 +275,15 @@ Testing
 	- to execute testing
 	if __name__ == '__main__':
 		unittest.main()
+- . for pass, E for error, F for failed assertion
+- commonly used assert methods in unittest
+	- assertEqual(a, b) > verify a == b
+	- assertNotEqual(a, b) > verify a != b
+	- assertTrue(x) > verify x is True
+	- assertFalse(x) > verify x is False
+	- assertIn(item, list) > verify item is in list
+	- assertNotIn(item, list) > verify item is not in list
+- setUp() method
+	- create objects once and use them in each test method in a test case
+	- ran before any test_ methods
+	- use self. prefix
