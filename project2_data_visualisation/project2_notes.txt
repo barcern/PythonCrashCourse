@@ -1,0 +1,8 @@
+Packages
+- matplotlib - simple graphs
+	- pyplot
+		- fig, ax = plt.subplots() to generate one or more plots in same figure where
+		fig is the full figure and ax is one plot
+		- plot() to generate plot
+		- plt.show() to display the plot
+- plotly - interactive visualisation which resize to fit display devices
