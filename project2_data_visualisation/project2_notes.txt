@@ -9,3 +9,6 @@ Packages
 		- .scatter() to generate a scatter plot, can include c variable for colours and s variable for size
 		- ...c=y_values, cmap=plt.cm.Blues,... as colormaps to set the colours to be a gradient, must be linked e.g. to y values
 - plotly - interactive visualisation which resize to fit display devices
+
+Random walks
+- path determined by random decisions

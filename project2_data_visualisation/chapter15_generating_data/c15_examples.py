@@ -139,3 +139,17 @@ ax.axis([0, 1100, 0, 1100000])
 
 # Save plot here
 plt.savefig('squares_plot.png', bbox_inches='tight')
+
+
+# Random walks
+class RandomWalk:
+    """A class to generate random walks."""
+    
+    def __init__(self, num_points=5000):
+        """Initialise attributes of a walk."""
+        self.num_points = num_points
+        
+        # All walks start at (0, 0)
+        self.x_values = [0]
+        self.y_values = [0]
+        
